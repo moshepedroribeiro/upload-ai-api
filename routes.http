@@ -26,12 +26,12 @@ Content-Type: application/json
 
 ###
 
-# @name create-transcription
+# @name create-GER
 POST http://localhost:3333/ai/complete
 Content-Type: application/json
 
 {
     "videoId": "cf9ebbf0-d902-458f-8842-ceb49d47682c",
     "temperature": 0.5,
-    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+    "prompt": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
 }
